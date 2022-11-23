@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Makeup magazine</title>
+</head>
+
+<body>
+    <nav>
+        <!-- Navbar Brand-->
+        <a href="index.html">Makeup magazine</a>
+        <!-- Sidebar Toggle-->
+        <button id="sidebarToggle" href="#!"><i></i></button>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav id="sidenavAccordion">
+                <div>
+                    <div>
+
+                        <a href="index.html">
+                            <div><i></i></div>
+                            Tableau de bord
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div>Logged in as:</div>
+                    EL GHAZY MOHAMED REDA
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div>
+                    <h1>Makeup magazine</h1>
+                    <button id="show"  onclick="show(this)">Ajouter</button>
+                    <div>
+
+                        <div>
+                            <i></i>
+                        </div>
+                        <div>
+
+                            <form id="formSubmit">
+                                <div>
+                                    <label for="inputNom">Nom</label>
+                                    <input required type="text"  id="inputNom" maxlength="30">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputMarque">Marque</label>
+                                    <input required type="text"  id="inputMarque" maxlength="30">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPrix">Prix</label>
+                                    <input required type="number" step=any  class="form-control" id="inputPrix">
+                                </div>
+                                <div>
+                                    <label for="inputDate">Date de </label>
+                                    <input required type="date" class="form-control" id="inputDate"
+                                        placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div>
+                                    <label for="inputType">Type</label>
+                                    <select required id="inputType">
+                                        <option value="" disabled selected>Choisir...</option>
+                                        <option value="Hygiène et toilette">Hygiène et toilette</option>
+                                        <option value="Soins esthétiques">Soins esthétiques</option>
+                                        <option value="Produits solaires">Produits solaires</option>
+                                        <option value="Beauté des mains et des pieds">Beauté des mains et des pieds</option>
+                                        <option value="Produits de maquillage">Produits de maquillage</option>
+                                        <option value="Entretien capillaires">Entretien capillaires</option>
+                                        <option value="Parfums">Parfums</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="Promotion">Est en promotion</label>
+                                    <div>
+                                        <input required  name="Promotion" value="Oui" type="radio" id="gridCheck">
+                                        <label for="gridCheck">
+                                            Oui
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input required name="Promotion" value="Non" type="radio" id="gridCheck">
+                                        <label  for="gridCheck">
+                                            Non
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="col-12">
+                                    <button  id="submitButton"  type="submit" class="btn btn-success">Enregistrer</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <i></i>
+                        </div>
+                        <div>
+                            <table id="worksTable">
+                                <thead>
+                                    <tr>
+                                        <th>Nom</th>
+                                        <th>Marque</th>
+                                        <th>Prix</th>
+                                        <th>Date de publication</th>
+                                        <th>Type</th>
+                                        <th>Est en promotion</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div>
+                    <div>
+                        <div>Copyright &copy; Your Website 2021</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
